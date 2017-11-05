@@ -1,0 +1,21 @@
+.imgnav {
+	width: 100px;
+	height: 100px;
+}
+.navstyle {
+	border-color: #DF3A01;
+	colo
+}
+
+.lettertop {
+	font-size: 23px;
+}
+.about {
+	font-weight: 102px;
+}
+
+.login_loader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

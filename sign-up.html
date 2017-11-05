@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Frenmap Log in</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Frendmap</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <main>
+
+        <div class="content-form">
+            
+            <h1>sign up</h1>
+           
+            <form action="" id="loginform">
+               
+                <label for="username_sign" class="lbl-username_sign">username</label>
+                <input type="text" id="username_sign" name="username_sign" >
+                
+<<<<<<< HEAD
+
+=======
+>>>>>>> 714f43a07eca3a064df9c6310f060cbece08ecc1
+                <label for="password_sign" class="lbl-password_sign">Password</label>
+                <input type="password" id="password_sign" name="password_sign" >
+
+                <label for="firstname_sign" class="lbl-firstname_sign">First name</label>
+                <input type="text" id="firstname_sign" name="firstname_sign" >
+
+                <label for="lastname_sign" class="lbl-lastname_sign">Last name</label>
+                <input type="text" id="lastname_sign" name="lastname_sign" >
+                
+                <input type="submit" value="sign up">
+            </form>
+<<<<<<< HEAD
+    
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/index.js"></script>
+
+
+           
+            <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+            <script>
+
+                
+ // Initialize Firebase
+
+
+              var config = {
+                apiKey: "AIzaSyAfnwlpwlJrZ2kzZPe-DlNJm2ozWLwPj8s",
+                authDomain: "frendmaps-17.firebaseapp.com",
+                databaseURL: "https://frendmaps-17.firebaseio.com",
+                projectId: "frendmaps-17",
+                storageBucket: "frendmaps-17.appspot.com",
+                messagingSenderId: "429186543578"
+              };
+              firebase.initializeApp(config);
+
+                var db = firebase.database();
+                $(document).ready(function($){
+                    $('#signup_form').on('submit', function(e){
+                        e.preventDefault(e);
+                        var username_sign = $('#username_sign').val();
+                        var password_sign = $('#password_sign').val();
+                        var firstname_sign = $('#firstname_sign').val();
+                        var lastname_sign = $('#lastname_sign').val();
+                        db.ref("users-sub").child('user').push({username_sign: username_sign, password_sign: password_sign, firstname_sign: firstname_sign, lastname_sign: lastname_sign });
+                        $('#signup_form').slideUp();
+                        $('#sub').slideDown();
+                    //....Added code....
+                    setTimeout(function(){
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#number').val('');
+                        $('#modalOut').removeClass('activeModal');
+                        $('#modalCont').removeClass('activeModalCont');
+                        setTimeout(function () {
+                            $('#partnerForm').show();
+                            $('#sub').hide();
+                        }, 500)
+                    },2000);
+                    //
+                    });
+
+                });
+            </script>
+
+=======
+            
+            <div class="content-redes">
+                 <a href="#"><div class="googleplus">
+                        <h2>G+</h2>
+                        <label>Log in with Google</label>
+                </div></a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/core/data/user.js"></script>
+    <script src="js/core/app.js"></script>
+ 
+  
+>>>>>>> 714f43a07eca3a064df9c6310f060cbece08ecc1
+
+</body>
+</html>
