@@ -1,27 +1,42 @@
 
-window.onload = login_form;
+				var db = firebase.database();
 
 
-	function inicializar (){
+                 $('#login_form').on('submit', function(e){
+                e.preventDefault();
 
-		login_form = document.getElementById('login_form');
-		login_form.addEventListener("submit, authenticate, false");
-	}
+                var username = jQuery('#username').val().trim();
+                var password = jQuery('#password').val().trim();
+
+                if(!username) {
+                    alert('Por favor ingrese un nombre de usuario');
+                    return false;
+                }
+
+                if(!password) {
+                    alert('Por favor ingrese una contraseña');
+                    return false;
+                }
+
+                var dataUsuario= db.ref("users-sub/user");
+                
+                var queryRef = dataUsuario.orderByChild("username_sign").equalTo(username).on('child_added', function(snapshot) {
+                	//console.log(snapshot);
+                	db.ref("users-sub/user/" + snapshot.key).on('child_added', function(data) {
+                		//console.log(data.key, data.val());
+                		if(data.key === 'password_sign'){
+                			if(data.val() === password) {
+                				alert('Bienvenido a la aplicacion!');
+                				window.location = 'www.google.com';
+                			} else {
+                				alert('El usuario o la contrasena es incorrecto, revise');
+                			}
+                		}
+                	});
+                });
+
+               
 
 
-	function authenticate (event){
-		event.preventDefault();
 
-		var user = event.target.email.value;
-		var password = event.target.password.value;
-
-
-		firebase.auth().signInWithEmailAndPassword(user, password)
-			.then(function(result){
-				window.alert("authenticate successful");
-			})
-			// Handle Errors here.
-			.catch(function(error) {
-			window.alert("authenticate error");
-		});
-	}
+        });
