@@ -74,6 +74,8 @@
                         var firstname_sign = $('#firstname_sign').val();
                         var lastname_sign = $('#lastname_sign').val();
                         db.ref("users-sub").child('user').push({username_sign: username_sign, password_sign: password_sign, firstname_sign: firstname_sign, lastname_sign: lastname_sign });
+
+
                         $('#signup_form').slideUp();
                         $('#sub').slideDown();
                     //....Added code....
@@ -95,10 +97,10 @@
             </script>
         </div>
     </main>
-    
+    ..
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/index.js"></script>
->
+
  
 
 
