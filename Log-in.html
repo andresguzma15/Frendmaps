@@ -2,23 +2,23 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Frendmap</title>
+  <title>Frenmap Log in</title>
   
   
   
       <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
   <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    
+	    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
     
 
@@ -29,7 +29,7 @@
             <h1>Log in</h1>
             <h4>Are you new in Frendmap? <a href="Sign-up.html">Sign up</a></h4>
            
-            <form action="" id="loginform">
+            <form action="" id="login_form">
                 <label for="username" class="lbl-username">username</label>
                 <input type="text" id="username" name="username" >
                 
@@ -55,9 +55,22 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/core/data/user.js"></script>
-    <script src="js/core/app.js"></script>
- 
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAfnwlpwlJrZ2kzZPe-DlNJm2ozWLwPj8s",
+	    authDomain: "frendmaps-17.firebaseapp.com",
+	    databaseURL: "https://frendmaps-17.firebaseio.com",
+	    projectId: "frendmaps-17",
+	    storageBucket: "frendmaps-17.appspot.com",
+	    messagingSenderId: "429186543578"
+	  };
+	  
+	  firebase.initializeApp(config);
+	 </script>
+	 <script src= "js/login_form.js"></script>
   
 
 </body>
