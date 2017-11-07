@@ -74,6 +74,7 @@
                         var firstname_sign = $('#firstname_sign').val();
                         var lastname_sign = $('#lastname_sign').val();
                         db.ref("users-sub").child('user').push({username_sign: username_sign, password_sign: password_sign, firstname_sign: firstname_sign, lastname_sign: lastname_sign });
+                            window.location = 'Log-in.html';
 
 
                         $('#signup_form').slideUp();

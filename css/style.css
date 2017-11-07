@@ -236,9 +236,9 @@ main{
 
 
 
-/*button sign up*/
+/*input sign up*/
 
-button[type="submit" ]{
+input[type="submit" ]{
     margin-top: 20px;
     padding: 10px 50px;
     font-size: 20px;
@@ -253,7 +253,7 @@ button[type="submit" ]{
     outline: 0px;
 }
 
-button[type="submit"]:hover{
+input[type="submit"]:hover{
     background: #28a9fa;
     color: white;
     cursor: pointer;
@@ -261,7 +261,7 @@ button[type="submit"]:hover{
     transition: all 300ms;
 }
 
-button[type="submit"]:active{
+input[type="submit"]:active{
     background: #6dc5fc;
     -webkit-transition: all 100ms;
     transition: all 100ms;

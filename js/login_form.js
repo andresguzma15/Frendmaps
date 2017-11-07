@@ -27,7 +27,7 @@
                 		if(data.key === 'password_sign'){
                 			if(data.val() === password) {
                 				alert('Bienvenido a la aplicacion!');
-                				window.location = 'www.google.com';
+                				window.location = 'mapa.html';
                 			} else {
                 				alert('El usuario o la contrasena es incorrecto, revise');
                 			}
