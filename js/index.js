@@ -64,7 +64,7 @@ $('#username_sign').on('focusout', function(){
     
     if($('#username_sign').val().length < 1){
         
-        $('.lbl-username_sign').css("margin-top", "55px");
+        $('.lbl-username_sign').css("margin-top", "10px");
         $('.lbl-username_sign').css("font-size", "20px");
     }else{
         $('.lbl-username_sign').css("margin-top", "-20px");
@@ -76,7 +76,7 @@ $('#username_sign').on('focusout', function(){
 
 $('#password_sign').on('focus', function(){
     
-    $('.lbl-password_sign').css("margin-top", "30px");
+    $('.lbl-password_sign').css("margin-top", "20px");
     $('.lbl-password_sign').css("font-size", "14px");
 })
 
@@ -104,10 +104,10 @@ $('#firstname_sign').on('focusout', function(){
     
     if($('#firstname_sign').val().length < 1){
         
-        $('.lbl-firstname_sign').css("margin-top", "90px");
+        $('.lbl-firstname_sign').css("margin-top", "70px");
         $('.lbl-firstname_sign').css("font-size", "20px");
     }else{
-        $('.lbl-firstname_sign').css("margin-top", "-40px");
+        $('.lbl-firstname_sign').css("margin-top", "40px");
     $('.lbl-firstname_sign').css("font-size", "14px");
     }
 })
@@ -116,7 +116,7 @@ $('#firstname_sign').on('focusout', function(){
 
 $('#lastname_sign').on('focus', function(){
     
-    $('.lbl-lastname_sign').css("margin-top", "80px");
+    $('.lbl-lastname_sign').css("margin-top", "60px");
     $('.lbl-lastname_sign').css("font-size", "14px");
 })
 
@@ -124,10 +124,10 @@ $('#lastname_sign').on('focusout', function(){
     
     if($('#lastname_sign').val().length < 1){
         
-        $('.lbl-lastname_sign').css("margin-top", "130  px");
+        $('.lbl-lastname_sign').css("margin-top", "80px");
         $('.lbl-lastname_sign').css("font-size", "20px");
     }else{
-        $('.lbl-lastname_sign').css("margin-top", "-80px");
+        $('.lbl-lastname_sign').css("margin-top", "60px");
     $('.lbl-lastname_sign').css("font-size", "14px");
     }
 })
