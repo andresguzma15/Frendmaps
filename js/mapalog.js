@@ -11,7 +11,7 @@ dataZonas = [
     '<li>Cueros velez'+
     '<li>Gate 1'+
     '</ul>',
-    'zone 1'
+    'Boarding zone'
   ),
   new ZonaAeropuerto(
     'On this zone you can find places like: <br>'+
@@ -19,7 +19,7 @@ dataZonas = [
     '<li>Waiting zone'+
     '<li>libreria internacional el viajero'+
     '<li>kamilas accesorios'+
-    '<li>Gate 2'+
+    '<li>Gate 2 & 3'+
     '</ul>',
     'Boarding zone'
   ),
@@ -27,7 +27,7 @@ dataZonas = [
     'On this zone you can find places like: <br>'+
     '<ul>'+
     '<li>Waiting zone'+
-    '<li>Gate 3'+
+    '<li>Gate 3 & 4'+
     '</ul>',
     'Boarding zone'
   ),
@@ -35,7 +35,7 @@ dataZonas = [
     'On this zone you can find places like: <br>'+
     '<ul>'+
     '<li>Waiting zone'+
-    '<li>Gate 4'+
+    '<li>Gate 4 & 5'+
     '</ul>',
     'Boarding zone'
   ),
@@ -48,7 +48,7 @@ dataZonas = [
     '<li>Doger'+
     '<li>Naturally fast'+
     '<li>bathrooms access'+
-    '<li>Gate 5'+
+    '<li>Gate 5 & 6'+
     '</ul>',
     'Boarding zone'
   ),
@@ -58,9 +58,149 @@ dataZonas = [
     '<ul>'+
     '<li>Bistro'+
     '<li>J & C delicias'+
-    '<li>Gate '+
+    '<li>Gate 6 & 7'+
     '</ul>',
     'Boarding zone'
+  ),
+
+   new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>elevators'+
+    '<li>Waiting zone'+
+    '<li>Gate 7 & 8'+
+    '</ul>',
+    'Boarding zone '
+  ),
+
+      new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>elevators'+
+    '<li>Waiting zone'+
+    '<li>Gate 8 & 9'+
+    '</ul>',
+    'Boarding zone '
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Frontier'+
+    '<li>THE GROCERY'+
+    '<li>Doger'+
+    '<li>Waiting zone'+
+    '<li>Gate 9 & 10'+
+    '</ul>',
+    'Boarding zone '
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>elevators'+
+    '<li>Waiting zone'+
+    '<li>Gate 10 & 11'+
+    '</ul>',
+    'Boarding zone '
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>bathrooms access'+
+    '<li>Sky free shop'+
+    '<li>El market colombia'+
+    '<li>Waiting zone'+
+    '<li>Gate 11 & 12'+
+    '</ul>',
+    'Boarding zone '
+  ),
+
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Cueros velez'+
+    '<li>grano de cafe'+
+    '<li>escalators'+
+    '<li>Duty free'+
+
+    '</ul>',
+    'transit area'
+  ),
+
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>passport control'+
+    '</ul>',
+    'check in zone'
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall B'+
+    '<li>Tierradentro'+
+    '<li>Euroservicios'+
+    '<li>Entrance/Exit'+
+    '</ul>',
+    'check in zone'
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall B'+
+    '<li>Juan Valdez'+
+    '<li>Verano'+
+    '<li>libreria Nacional'+
+    '<li>Entrance/Exit'+
+    '</ul>',
+    'check in zone'
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall A'+
+    '<li>Avianca'+
+    '<li>Lan'+
+    '<li>Pasteleria Santa Elena'+
+    '<li>Entrance/Exit'+
+    '</ul>',
+    'Sales Offices'
+  ),
+
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall B'+
+    '<li>bathrooms access'+
+    '<li>Entrance/Exit'+
+    '</ul>',
+    'bathrooms zone'
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall A & B'+
+    '<li>bathrooms access'+
+    '</ul>',
+    'bathrooms zone'
+  ),
+
+     new ZonaAeropuerto(
+    'On this zone you can find places like: <br>'+
+    '<ul>'+
+    '<li>Hall A'+
+    '<li>bathrooms access'+
+    '</ul>',
+    'bathrooms zone'
   ),
 ]
 
@@ -541,7 +681,7 @@ dataZonas = [
 
 
         var bathroom_zone = new google.maps.Polygon({
-          paths: [zone17],
+          paths: [zone16],
           strokeColor: '#673AB7',
           strokeOpacity: 0.8,
           strokeWeight: 2,
@@ -558,7 +698,7 @@ dataZonas = [
 
 
         var bathroom_zone2 = new google.maps.Polygon({
-          paths: [zone18],
+          paths: [zone17],
           strokeColor: '#673AB7',
           strokeOpacity: 0.8,
           strokeWeight: 2,
@@ -573,7 +713,7 @@ dataZonas = [
 
 
         var bathroom_zone3 = new google.maps.Polygon({
-          paths: [zone19],
+          paths: [zone18],
           strokeColor: '#673AB7',
           strokeOpacity: 0.8,
           strokeWeight: 2,
@@ -583,13 +723,13 @@ dataZonas = [
 
         bathroom_zone3.setMap(map);
         bathroom_zone3.addListener('click', function(event){
-          showArrays(event, this.getPath(),  19)
+          showArrays(event, this.getPath(),  17)
         });
 
 
         // Zona de comidas
         var shopping_hall = new google.maps.Polygon({
-          paths: [zone16],
+          paths: [zone19],
           strokeColor: '#1B5E20',
           strokeOpacity: 0.8,
           strokeWeight: 2,
@@ -599,7 +739,7 @@ dataZonas = [
 
         shopping_hall.setMap(map);
         shopping_hall.addListener('click', function(event){
-          showArrays(event, this.getPath(),  20)
+          showArrays(event, this.getPath(),  18)
         });
 
         var flightPath = new google.maps.Polyline({

@@ -351,3 +351,36 @@ input[type="submit"]:active{
         width: 100%;
     }
 }
+
+
+
+
+/* poppup */
+
+#popup_data {  
+    width: 5px;
+    height: 40px;
+    color: $gray;
+    font-family: 'Helvetica', arial;
+}
+
+#popup_data h1 { 
+        width: 5px;
+    height: 40px;
+ font-size: 30px;
+  margin-bottom: $space;
+}
+
+
+
+#popup_data p{
+ margin-bottom: $space/2;
+     width: 5px;
+    height: 40px;
+}
+
+
+
+
+
+ 
